@@ -1,4 +1,0 @@
-2025-07-23 09:36:14,569 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=9cc84607f216127b0e0e4c4d86bf7853
-2025-07-23 09:36:16,267 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
-2025-07-23 09:36:19,248 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
-2025-07-23 09:36:19,830 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=9cc84607f216127b0e0e4c4d86bf7853

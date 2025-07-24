@@ -1,4 +1,12 @@
+# Ignore environment file
 .env
+
+# Ignore Python cache
 __pycache__/
-lib/
-.DS_Store
+*.pyc
+
+# Ignore PDF files
+*.pdf
+
+# Ignore AgentOps logs
+agentops.log
