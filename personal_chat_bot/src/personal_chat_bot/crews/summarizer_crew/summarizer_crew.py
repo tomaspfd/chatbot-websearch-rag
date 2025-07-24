@@ -28,7 +28,8 @@ class SummarizerCrew:
 
     @property
     def llm(self) -> LLM:
-        config_file = "C:\\Users\\tomas\\Desktop\\Internship Daniel\\Coding\\Chat_Bot\\model_config.txt"
+        base_dir = Path(__file__).resolve().parents[4]
+        config_file = base_dir / "model_config.txt"
 
         try:
             with open(config_file, "r") as f:
