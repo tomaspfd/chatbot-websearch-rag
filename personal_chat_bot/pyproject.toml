@@ -1,0 +1,21 @@
+[project]
+name = "personal_chat_bot"
+version = "0.1.0"
+description = "personal_chat_bot using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.141.0,<1.0.0",
+]
+
+[project.scripts]
+kickoff = "personal_chat_bot.main:kickoff"
+run_crew = "personal_chat_bot.main:kickoff"
+plot = "personal_chat_bot.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"

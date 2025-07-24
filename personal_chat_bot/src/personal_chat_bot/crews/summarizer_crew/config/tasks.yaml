@@ -1,0 +1,14 @@
+summarize_chat:
+  description: >
+    Summarize the following portion of a chat conversation.
+    Focus on capturing the key points, decisions, questions, or emotional tone from the user and assistant.
+    Keep in mind that the summary you produce will serve as memory for another agent that is interacting with the user.
+
+    Conversation to summarize:
+    {conversation_to_summarize}
+    In the {conversation_to_summarize}, you will find the user prompts as "User: ...", the chatbot's responses as 
+    "Assistant: ...", and the previous summary that was generated as "System: Conversation Summary: ...". All three
+    should be combined into the new summary. The total length of the summary should not exceed 500 words.
+  expected_output: >
+    A concise paragraph summarizing the conversation so far. Avoid generalities — preserve meaningful user context.
+  agent: chat_summarizer

@@ -1,0 +1,12 @@
+reply_to_user:
+  description: 'Answer the user''s question or prompt, {conversation_history}, in
+    the most helpful way possible. The user relies on you to provide accurate and
+    useful information, so that he can  make informed decisions or gain insights.
+    If you are provided with a tool (like web search or pdf search with rag), 
+    always use it.
+
+    '
+  expected_output: 'A response that is as useful as possible.
+
+    '
+  agent: chatbot
