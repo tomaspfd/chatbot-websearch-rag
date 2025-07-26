@@ -1,2 +1,2 @@
 Local
-gemma3
+llama3.2

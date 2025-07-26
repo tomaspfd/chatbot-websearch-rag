@@ -40,7 +40,7 @@ class ChatBotCrew:
     def llm(self) -> LLM:
         """Lazily loads and caches the LLM instance based on model_config.txt"""
         if not hasattr(self, "_llm"):
-            base_dir = Path(__file__).resolve().parents[4]
+            base_dir = Path(__file__).resolve().parents[5]
             config_file = base_dir / "model_config.txt"
 
             try:
@@ -70,7 +70,7 @@ class ChatBotCrew:
         
 
     def create_search_tool(self):
-        base_dir = Path(__file__).resolve().parents[4]
+        base_dir = Path(__file__).resolve().parents[5]
         pdf_path = base_dir / "uploaded.pdf"
 
         # Reconstruct the LLM config manually based on the LLM object
@@ -124,7 +124,7 @@ class ChatBotCrew:
     
 
     def create_tool_list(self):
-        base_dir = Path(__file__).resolve().parents[4]
+        base_dir = Path(__file__).resolve().parents[5]
         config_file = base_dir / "tool_config.txt"
         tools = []
         try:
